@@ -23,17 +23,17 @@ cardNumbers.addEventListener("input", function (e) {
 
   let visaRegex = new RegExp("^4 || '' ");
   if (card.match(visaRegex) != null) {
-    cardNumbers.style.backgroundImage = "url('img/visa2.png')";
+    cardNumbers.style.backgroundImage = "url('./img/visa2.png')";
   }
 
   let americanRegex = new RegExp("^6011");
   if (card.match(americanRegex) != null) {
-    cardNumbers.style.backgroundImage = "url('img/american-expres.png')";
+    cardNumbers.style.backgroundImage = "url('./img/american-expres.png')";
   }
 
   let masterCard = new RegExp("^5[1-5]");
   if (card.match(masterCard) != null) {
-    cardNumbers.style.backgroundImage = "url('img/visa.png')";
+    cardNumbers.style.backgroundImage = "url('./img/visa.png')";
   }
 });
 
