@@ -11,9 +11,7 @@ body {
 }
 
 
-.right p {
-  font-size: 50px;
-}
+
 
 .container {
   display: flex;
@@ -44,7 +42,7 @@ body {
 }
 
 .left h1 {
-  font-size: 1.875em;
+  font-size: 5vw;
   margin-bottom: 20px;
 }
 
@@ -120,13 +118,13 @@ input:focus {
 }
 
 .right h2 {
-  font-size: 1.875em;
+  font-size: 5vw;
   margin-bottom: 30px;
 }
 
 .item-and-prices {
   display: flex;
-  gap: 30px;
+  gap: .625rem;
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -140,13 +138,13 @@ input:focus {
 
 .right p {
   font-weight: 800;
-  font-size: .9375em;
+  font-size: 0.9em;
   margin-bottom: 0;
 }
 
 .right .price {
   font-weight: 600;
-  font-size: .8125em;
+  font-size: 1.5vw;
 }
 
 .right span {
@@ -174,6 +172,7 @@ input:focus {
   align-items: flex-end;
   gap: 20px;
   justify-content: space-between;
+  width: 6.25rem;
 }
 
 .right-title {
@@ -186,7 +185,7 @@ input:focus {
 form input:nth-child(4) {
   background: url(./img/visa.png) no-repeat;
   background-blend-mode: darken;
-  background-color: #ebebeb;
+  background-color: rgb(242, 242, 242);
   padding: 6px 6px 6px 40px;
   width: 90%;
   background-size: 33px;
@@ -217,22 +216,110 @@ form input:nth-child(4) {
 }
 
 .glow {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   background-color: #9563ff;
   border-radius: 50%;
   position: absolute;
-  right: 140px;
-  top: 100px;
+  /* right: 8.75rem;
+  top: 6.25rem; */
+
+  right: 20%;
+  top: 15%;
   filter: blur(33px);
   z-index: 0;
 }
 
 
 
-@media (min-width: 320px) and (max-width: 500px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
+@media (min-width: 320px) and (max-width: 768px) {
+
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      height: 85vh;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  input {
+    height: .75rem;
+  }
+
+  .left {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left p {
+    margin: .125rem;
+    margin-bottom: .625rem;
+    text-align: center;
+    width: 15.625rem;
+    height: 2.8125rem;
+
+  }
+
+  .left h1 {
+    margin: .125rem;
+    margin-bottom: 6px;
+   padding-top: 20px;
+   margin-top: 30px;
+  }
+
+  button {
+    margin-top: .5rem;
+    padding: 2% 10% ;
+  }
+
+  .right{
+    width: 100%;
+    height: 45%;
+    padding: 2%;
+    
+  }
+
+  .right p {
+    font-size: 2vw;
+  }
+
+  .right .price {
+    font-size: 2vw;
+}
+
+  span {
+    margin-bottom: 0;
+  }
+
+.label {
+  font-size: 3vw;
+
+}
+
+.items {
+  gap: .0625rem;
+}
+
+p{
+  margin: .125rem;
+}
+
+.Total {
+  margin: 0;
+}
+
+.glow {
+  right:14.25rem ;
+  top: 24.1875rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+    
 }
