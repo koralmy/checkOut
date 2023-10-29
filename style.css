@@ -42,7 +42,7 @@ body {
 }
 
 .left h1 {
-  font-size: 5vw;
+  font-size: 3.5vw;
   margin-bottom: 20px;
 }
 
@@ -118,7 +118,7 @@ input:focus {
 }
 
 .right h2 {
-  font-size: 5vw;
+  font-size: 3.5vw;
   margin-bottom: 30px;
 }
 
@@ -144,7 +144,7 @@ input:focus {
 
 .right .price {
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .right span {
