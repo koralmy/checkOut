@@ -172,7 +172,6 @@ function validationsFunction(e) {
   ) {
     btn.disabled = false;
     btn.style.cursor = "pointer";
-    btn.location.href ="sucssec.html";
   } else {
     btn.disabled = true;
   }

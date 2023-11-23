@@ -20,11 +20,12 @@
         <section>
             <div class="tnx-box">
 
-                <h1>your paymant has been resevrd</h1>
+                <h2>your paymant has been received.</h2>
 
+                <p>Your order number is: </p>
                 <p id ="orederNumber"> </p>
 
-                <p>thak you for your porches</p>
+                <p>Thak you for your purchase! ♥</p>
 
             </div>
         </section>
@@ -36,7 +37,7 @@
         // Function to generate random number
         function randomNumber(min, max) {
             const orederNumberRendom = Math.floor(Math.random() * (max - min) + min);
-            document.getElementById("orederNumber").innerHTML = ( "your order number is: " + orederNumberRendom)
+            document.getElementById("orederNumber").innerHTML = (orederNumberRendom)
         }
     
 
